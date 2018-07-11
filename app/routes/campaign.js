@@ -5,8 +5,15 @@ const initCampaign = () => {
     campaignRouter.get('/', campaignController.getCampaigns);
      campaignRouter.get('/emaillist', campaignController.getEmailState);
      campaignRouter.post('/', campaignController.createCampaign);
-     campaignRouter.delete('/', campaignController.deleteSegment);// for sending info about updatable data
-    // campaignRouter.put('/:id', initCampaign.updateArticles);
+
+     //Segment Operation
+     campaignRouter.get('/segments', campaignController.getAllSegment);
+     campaignRouter.post('/segments', campaignController.createSegment);
+     campaignRouter.put('/segments', campaignController.updateSegment);
+     campaignRouter.delete('/segments', campaignController.deleteSegment);
+     campaignRouter.get('/getyoursegment', campaignController.getSpecificSegment);
+     
+     
     return campaignRouter;
 }
 module.exports = initCampaign;
