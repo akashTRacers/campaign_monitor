@@ -4,7 +4,7 @@ const initCampaign = () => {
   const campaignRouter = express.Router();
   campaignRouter.get('/:clientId/campaigns', campaignController.getCampaigns);// true
   campaignRouter.post('/:clientId/campaigns', campaignController.createCampaign);//true
-  //campaignRouter.get('/emaillist/:clientid', campaignController.getEmailState);
+  campaignRouter.get('/:clientid/emailSent', campaignController.getEmailState);
   return campaignRouter;
 }
 module.exports = initCampaign;
