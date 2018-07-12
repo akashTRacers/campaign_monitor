@@ -8,4 +8,3 @@ const initRoutes = (app) => {
     app.use('/campaigns', initSegment()); 
 }
 module.exports = initRoutes;
-

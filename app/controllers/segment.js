@@ -1,83 +1,55 @@
 var requestMaker = require('request');
-class segmentController{
+class segmentController {
 
-    static getAllSegment(request,response){
-        console.log(">>>>>>>>>>>>>>>>>>>>>>geAllSegment  1");
-        const campaignID = request.params.campaignID;
-        requestMaker('https://api.createsend.com/api/v3.2/lists/'+campaignID+'/segments.json', { json: true, method: 'GET',headers: {
-            'Authorization': 'Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE=',
-            'Content-Type': 'application/json'
-        }}, (err, res, body) => {
-            if (err) { return console.log(err); }
-            console.log(body.message);
-            response.send(body);
-          });
+  static getAllSegment(request, response) {
+    const campaignID = request.params.campaignID;
+    const endPoint = 'lists/' + campaignID + '/segments.json'
+    segmentController._prepareRequest(endPoint, request, response);
+  }
 
-    }
+  static getSpecificSegment(request, response) {
+    const segmentId = request.params.segmentid;
+    const endPoint = 'segments/' + segmentId + '.json'
+    segmentController._prepareRequest(endPoint, request, response);
+  }
 
-    static getSpecificSegment(request,response){
-        console.log(">>>>>>>>>>>>>>>>>>>>>>getSegment  1");
-        const segmentId=request.params.segmentid;
-        requestMaker('https://api.createsend.com/api/v3.2/segments/'+segmentId+'.json', { json: true, method: 'GET',headers: {
-            'Authorization': 'Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE=',
-            'Content-Type': 'application/json'
-        }}, (err, res, body) => {
-            if (err) { return console.log(err); }
-            console.log(body);
-            response.send(body);
-          }); 
+  static createSegment(request, response) {
+    const campaignID = request.params.campaignID;
+    const endPoint = 'segments/' + campaignID + '.json';
+    segmentController._prepareRequest(endPoint, request, response);
+  }
 
-    }
+  static updateSegment(request, response) {
+    const segmentId = request.params.segmentid;
+    const endPoint = 'segments/' + segmentId + '.json';
+    segmentController._prepareRequest(endPoint, request, response);
+  }
 
-    static createSegment(request,response){
-        console.log(">>>>>>>>>>>>>>>>>>>>>>createSegment  1");
-        const campaignID= request.params.campaignID;
-        console.log(campaignID);
-        console.log(request.body);
-        requestMaker('https://api.createsend.com/api/v3.2/segments/'+campaignID+'.json', { json: true, method: 'POST',headers: {
-            'Authorization': 'Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE=',
-            'Content-Type': 'application/json'},
-            body:request.body
-        }, (err, res, body) => {
-            if (err) { return console.log(err); }
-            console.log(body);
-            response.send(body);
-          });
+  static deleteSegment(request, response) {
+    const segmentId = request.params.segmentid;
+    const endPoint = 'segments/' + segmentId + '.json';
+    segmentController._prepareRequest(endPoint, request, response);
+  }
 
-    }
-   static updateSegment(request,response){
-    console.log(">>>>>>>>>>>>>>>>>>>>>>getSegment  1");
-    const segmentId=request.params.segmentid;
-    console.log(segmentId);
-    console.log(request.body);
-    requestMaker('https://api.createsend.com/api/v3.2/segments/'+segmentId+'.json', { json: true, method: 'PUT',headers: {
+  static _prepareRequest(endPoint, request, response) {
+    const baseUrl = 'https://api.createsend.com/api/v3.2/'
+    const url = baseUrl + endPoint;
+    requestMaker(url, {
+      json: true, method: request.method, headers: {
         'Authorization': 'Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE=',
         'Content-Type': 'application/json'
-    },body:request.body  
-
+      },
+      body: request.body
     }, (err, res, body) => {
-        if (err) { return console.log(err); }
-        console.log(body);
-        response.send(body);
-      });
-    }
+      if (err) { return console.log(err); }
+      console.log(body);
+      response.send(body);
+    });
+  }
 
-    static deleteSegment(request,response){
-        const segmentId=request.params.segmentid;
-       
-        console.log(">>>>>>>>>>>>>>>>>>>>>>deleteSegment  1");
-        requestMaker('https://api.createsend.com/api/v3.2/segments/'+segmentId+'.json', { json: true, method: 'DELETE',headers: {
-            'Authorization': 'Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE=',
-            'Content-Type': 'application/json'
-        }}, (err, res, body) => {
-            if (err) { return console.log(err); }
-            console.log(body);
-            response.send(body);
-          });
 
-    }
 
 
 
 }
-module.exports= segmentController;
+module.exports = segmentController;
