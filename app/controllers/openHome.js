@@ -1,10 +1,7 @@
-const  path='../views/index.pug';
-const articles= require('../models/article.js');
-class openHomeController{
-  static getHome(req,res)
-  {
-    console.log("inside getHome.js controllers")
-      res.send("inside get home");
+const path = '../views/index.pug';
+class openHomeController {
+  static getHome(req, res) {
+    res.send("inside get home");
   }
 }
-module.exports =openHomeController;
+module.exports = openHomeController;
