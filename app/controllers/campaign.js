@@ -1,9 +1,18 @@
 const _prepareRequest = require("../../lib/request");
 class campaignController{
-    
+
   static getCampaigns(request, response) {
+    let endPoint;
     const clientId = request.params.clientId;
-    const endPoint = 'clients/' + clientId + '/lists.json';
+    const provider= request.headers.provider;
+    console.log(typeof provider);
+    if(provider=="campaignMonitor"){
+        endPoint = 'clients/' + clientId + '/campaigns.json';
+    }
+    if(provider=="mailChimp"){
+      endPoint = 'clients/' + clientId + '/campaigns.json';
+  }
+
     _prepareRequest(endPoint, request, response);
   }
 
@@ -13,13 +22,6 @@ class campaignController{
     _prepareRequest(endPoint, request, response);
   }
 
-
-  static getEmailState(request,response){
-    const clientId=request.params.clientid;
-    const email= request.query.email;
-    const endPoint='clients/'+clientId+'/listsforemail.json?email='+email;
-    _prepareRequest(endPoint, request, response);
-  }
 
 }
 module.exports= campaignController;
