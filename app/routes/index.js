@@ -5,6 +5,6 @@ const initRoutes = (app) => {
   console.log("inside index.js");
   app.use('/', openHome());
   app.use('/clients',initList());
-  app.use('/campaigns', initSegment()); 
+  app.use('/lists', initSegment()); 
 }
 module.exports = initRoutes;
