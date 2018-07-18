@@ -12,7 +12,6 @@ class campaignController {
     if (provider == "mailChimp") {
       endPoint = 'clients/' + clientId + '/campaigns.json';
     }
-
     _prepareRequest(endPoint, request, response);
   }
 
