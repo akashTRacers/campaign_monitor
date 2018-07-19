@@ -7,7 +7,7 @@ const initList = () => {
   listRouter.get('/lists', espMiddleWare.getEsp, listController.getLists);//true
   listRouter.post('/lists', espMiddleWare.getEsp, listController.createList);//true
   //listRouter.get('/:clientId/campaigns', campaignController.getCampaigns);
-  // listRouter.post('/:clientId/campaigns', campaignController.createCampaign);
+  //listRouter.post('/:clientId/campaigns', campaignController.createCampaign);
   listRouter.get('/:clientid/emailSent', espMiddleWare.getEsp, listController.getEmailState);//true
   return listRouter;
 }
