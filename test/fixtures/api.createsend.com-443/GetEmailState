@@ -1,0 +1,21 @@
+GET /api/v3.2/clients/e8a260171cc650fd3c7de46ba6f7f0cf/listsforemail.json?email=jainakash7474@gmail.com
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {}
+
+HTTP/1.1 200 OK
+date: Wed, 25 Jul 2018 14:23:51 GMT
+content-type: application/json
+content-length: 788
+connection: close
+cache-control: private, s-maxage=0
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+x-cache: MISS
+x-edge-request-duration: 236ms
+x-edge-request-id: 4b311920-b352-1436-da77-84ce2d49a70b
+x-frame-options: SAMEORIGIN
+
+[{"ListID":"835d66e4ac3a69db3989da7a3ab6f46b","ListName":"List Imported for My First Campaign","SubscriberState":"Active","DateSubscriberAdded":"2018-07-06 16:25:00"},{"ListID":"0ca378631e57bf95c15005153f8c073b","ListName":"List Imported for My Second Campaign","SubscriberState":"Active","DateSubscriberAdded":"2018-07-09 18:01:00"},{"ListID":"9d6b4124777be61ad23723f1df9eca56","ListName":"website subscribers","SubscriberState":"Active","DateSubscriberAdded":"2018-07-09 11:53:00"},{"ListID":"b4803bda3cfafc452831d45b543e6dca","ListName":"welcome new Subscribers","SubscriberState":"Active","DateSubscriberAdded":"2018-07-25 13:25:00"},{"ListID":"401e991601ba97d1b471a390b72d7ac5","ListName":"welcome subscribers","SubscriberState":"Active","DateSubscriberAdded":"2018-07-24 18:19:00"}]

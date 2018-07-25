@@ -8,7 +8,7 @@ const initList = () => {
   listRouter.post('/lists', espMiddleWare.getEsp, listController.createList);//true
   //listRouter.get('/:clientId/campaigns', campaignController.getCampaigns);
   //listRouter.post('/:clientId/campaigns', campaignController.createCampaign);
-  listRouter.get('/:clientid/emailSent', espMiddleWare.getEsp, listController.getEmailState);//true
+  listRouter.get('/:clientId/emailSent', espMiddleWare.getEsp, listController.getEmailState);//true
   return listRouter;
 }
 module.exports = initList;

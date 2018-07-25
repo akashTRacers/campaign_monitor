@@ -1,0 +1,22 @@
+GET /api/v3.2/clients/e8a260171cc650fd3c7de46ba6f7f0cf/lists.json
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {}
+
+HTTP/1.1 200 OK
+date: Wed, 25 Jul 2018 13:59:53 GMT
+content-type: application/json
+content-length: 1096
+connection: close
+cache-control: private, s-maxage=0
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+vary: Accept-Encoding
+x-cache: MISS
+x-edge-request-duration: 296ms
+x-edge-request-id: 6df1cdb3-ca9c-4e82-78d2-cce6b7c3c9b9
+x-frame-options: SAMEORIGIN
+
+[{"ListID":"835d66e4ac3a69db3989da7a3ab6f46b","Name":"List Imported for My First Campaign"},{"ListID":"0ca378631e57bf95c15005153f8c073b","Name":"List Imported for My Second Campaign"},{"ListID":"030ad8574e11c3a3a3d730b8eb67531e","Name":"Newest Sky20"},{"ListID":"862a5089b3487457d76987abb09de94a","Name":"Newest Sky22"},{"ListID":"6f94ff25a8ac94b2372c24b22c608cc0","Name":"Newest Sky24"},{"ListID":"dad5e68e495ddf3ebefbcf87af87c057","Name":"Newest Sky25"},{"ListID":"6b155a931438abdea4d99a9c3acb9e07","Name":"Website Sky25"},{"ListID":"dd2cea13d53ed21a13bde9836bb3ce61","Name":"Website Sky26"},{"ListID":"fa5b6795caa286bb65688c4ed42a2a5a","Name":"Website Sky28"},{"ListID":"90bdf5af555f182e9a0ba3cdaf4543fe","Name":"Website Sky3"},{"ListID":"63a1463808791d9018596ee564dd41c3","Name":"Website Sky5"},{"ListID":"8da1450f24ce415d5b7cb50e29a60aff","Name":"Website Sky6"},{"ListID":"9d6b4124777be61ad23723f1df9eca56","Name":"website subscribers"},{"ListID":"b4803bda3cfafc452831d45b543e6dca","Name":"welcome new Subscribers"},{"ListID":"401e991601ba97d1b471a390b72d7ac5","Name":"welcome subscribers"}]

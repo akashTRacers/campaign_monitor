@@ -1,0 +1,21 @@
+POST /api/v3.2/segments/0ca378631e57bf95c15005153f8c073b.json
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {\"Title\":\"My Rules Segment56\",\"RuleGroups\":[{\"Rules\":[{\"RuleType\":\"DateSubscribed\",\"Clause\":\"AFTER 2009-01-01\"},{\"RuleType\":\"DateSubscribed\",\"Clause\":\"EQUALS 2009-01-01\"}]}]}
+
+HTTP/1.1 201 Created
+date: Wed, 25 Jul 2018 14:48:08 GMT
+content-type: application/json
+content-length: 34
+connection: close
+cache-control: private, s-maxage=0
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+x-cache: MISS
+x-edge-request-duration: 306ms
+x-edge-request-id: c383ba0a-b98f-c986-0f90-1d4ecf952710
+x-frame-options: SAMEORIGIN
+
+"58c3f23ee561525b195c61c657b6f794"

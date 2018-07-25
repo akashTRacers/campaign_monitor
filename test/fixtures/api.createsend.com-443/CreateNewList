@@ -1,0 +1,21 @@
+POST /api/v3.2/lists/e8a260171cc650fd3c7de46ba6f7f0cf.json
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {\"Title\":\"Website Sky29\",\"UnsubscribePage\":\"http://www.example.com/unsubscribed.html\",\"UnsubscribeSetting\":\"AllClientLists\",\"ConfirmedOptIn\":false,\"ConfirmationSuccessPage\":\"http://www.example.com/joined.html\"}
+
+HTTP/1.1 201 Created
+date: Wed, 25 Jul 2018 14:01:52 GMT
+content-type: application/json
+content-length: 34
+connection: close
+cache-control: private, s-maxage=0
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+x-cache: MISS
+x-edge-request-duration: 283ms
+x-edge-request-id: 7dbe50d4-730b-dfaf-411e-0e9b59998da8
+x-frame-options: SAMEORIGIN
+
+"66486eed5a3537a34b4af592f56aee0e"

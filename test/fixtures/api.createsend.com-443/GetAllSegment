@@ -1,0 +1,21 @@
+GET /api/v3.2/lists/0ca378631e57bf95c15005153f8c073b/segments.json
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {}
+
+HTTP/1.1 200 OK
+date: Wed, 25 Jul 2018 13:59:54 GMT
+content-type: application/json
+content-length: 365
+connection: close
+cache-control: private, s-maxage=0
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+x-cache: MISS
+x-edge-request-duration: 219ms
+x-edge-request-id: e14d8b3f-1765-0f14-42e4-6a70124e66c8
+x-frame-options: SAMEORIGIN
+
+[{"ListID":"0ca378631e57bf95c15005153f8c073b","SegmentID":"3ab594cddfe414916ea52a7c47e6c332","Title":"My Rules Segment"},{"ListID":"0ca378631e57bf95c15005153f8c073b","SegmentID":"8145d2196004c3ca149eeceefca64a1a","Title":"My Rules Segment11"},{"ListID":"0ca378631e57bf95c15005153f8c073b","SegmentID":"b71d546459be094451c9d2f5428545af","Title":"My Rules Segment50"}]
