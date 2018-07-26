@@ -1,0 +1,20 @@
+GET /3.0/lists/43f899303b/segments/4121
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6OTRhOTY1MGM1NjZlMzZhYjhjZjQ0NjFmMzU4NGQ1YTYtdXMxOA==
+content-type: application/json
+host: us18.api.mailchimp.com
+accept: application/json
+body: {}
+
+HTTP/1.1 200 OK
+server: openresty
+content-type: application/json; charset=utf-8
+content-length: 1320
+vary: Accept-Encoding
+x-request-id: e8363fd8-ab6f-4b00-a0c6-55bc592ae5f1
+link: <https://us18.api.mailchimp.com/schema/3.0/Lists/Segments/Instance.json>; rel="describedBy"
+date: Thu, 26 Jul 2018 10:49:59 GMT
+connection: close
+set-cookie: _AVESTA_ENVIRONMENT=prod; path=/
+set-cookie: _mcid=1.fe713f2c3dbbdc695d4955e6ff0552b9; expires=Fri, 26-Jul-2019 10:49:59 GMT; Max-Age=31536000; path=/; domain=.mailchimp.com
+
+{"id":4121,"name":"GrepStatic","member_count":2,"type":"static","created_at":"2018-07-16T09:06:41+00:00","updated_at":"2018-07-16T09:06:41+00:00","list_id":"43f899303b","_links":[{"rel":"self","href":"https://us18.api.mailchimp.com/3.0/lists/43f899303b/segments/4121","method":"GET","targetSchema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/Response.json"},{"rel":"parent","href":"https://us18.api.mailchimp.com/3.0/lists/43f899303b/segments","method":"GET","targetSchema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/CollectionResponse.json","schema":"https://us18.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Segments.json"},{"rel":"delete","href":"https://us18.api.mailchimp.com/3.0/lists/43f899303b/segments/4121","method":"DELETE"},{"rel":"update","href":"https://us18.api.mailchimp.com/3.0/lists/43f899303b/segments/4121","method":"PATCH","targetSchema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/Response.json","schema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/PATCH.json"},{"rel":"members","href":"https://us18.api.mailchimp.com/3.0/lists/43f899303b/segments/4121/members","method":"GET","targetSchema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/Members/Response.json"}]}

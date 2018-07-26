@@ -1,53 +1,93 @@
 const _prepareRequest = require("../../lib/request");
 class mailChimp {
   constructor() {
-    this.baseUrl="https://us18.api.mailchimp.com/3.0/";
+    this.baseUrl = "https://us18.api.mailchimp.com/3.0/";
   }
 
   getLists(request, response) {
-    const endPoint = 'lists';
-    _prepareRequest(this.baseUrl, endPoint, request, response);
+    return new Promise((success, error) => {
+      const endPoint = "lists";
+      _prepareRequest(this.baseUrl, endPoint, request, response)
+        .then(result => {
+          return success(result);
+        })
+        .catch(err => console.log(err));
+    });
   }
 
   createList(request, response) {
-    const endPoint = 'lists';
-    _prepareRequest(this.baseUrl, endPoint, request, response);
+    return new Promise((success, error) => {
+      const endPoint = "lists";
+      _prepareRequest(this.baseUrl, endPoint, request, response)
+        .then(result => {
+          return success(result);
+        })
+        .catch(err => console.log(err));
+    });
   }
 
   getAllSegment(request, response) {
-    const listId = request.params.listId;
-    const endPoint = 'lists/' + listId + '/segments';
-    _prepareRequest(this.baseUrl, endPoint, request, response);
+    return new Promise((success, error) => {
+      const listId = request.params.listId;
+      const endPoint = "lists/" + listId + "/segments";
+      _prepareRequest(this.baseUrl, endPoint, request, response)
+        .then(result => {
+          return success(result);
+        })
+        .catch(err => console.log(err));
+    });
   }
 
   getSpecificSegment(request, response) {
-    const segmentId = request.params.segmentid;
-    const listId = request.params.listId;
-    const endPoint = 'lists/' + listId + '/segments/' + segmentId;
-    _prepareRequest(this.baseUrl, endPoint, request, response);
+    return new Promise((success, error) => {
+      const segmentId = request.params.segmentId;
+      const listId = request.params.listId;
+      console.log(listId + "     " + segmentId);
+      const endPoint = "lists/" + listId + "/segments/" + segmentId;
+      _prepareRequest(this.baseUrl, endPoint, request, response)
+        .then(result => {
+          return success(result);
+        })
+        .catch(err => console.log(err));
+    });
   }
 
   createSegment(request, response) {
-    const listId = request.params.listId;
-    const endPoint = 'lists/' + listId + '/segments'
-    _prepareRequest(this.baseUrl, endPoint, request, response);
+    return new Promise((success, error) => {
+      const listId = request.params.listId;
+      const endPoint = "lists/" + listId + "/segments";
+      _prepareRequest(this.baseUrl, endPoint, request, response)
+        .then(result => {
+          return success(result);
+        })
+        .catch(err => console.log(err));
+    });
   }
 
   deleteSegment(request, response) {
-    const segmentId = request.params.segmentid;
+    return new Promise((success, error) => {
+    const segmentId = request.params.segmentId;
     const listId = request.params.listId;
-    const endPoint = 'lists/' + listId + '/segments/' + segmentId;
-    _prepareRequest(this.baseUrl, endPoint, request, response);
+    const endPoint = "lists/" + listId + "/segments/" + segmentId;
+    _prepareRequest(this.baseUrl, endPoint, request, response)
+    .then(result => {
+      return success(result);
+    })
+    .catch(err => console.log(err));
+    });
   }
 
   updateSegment(request, response) {
-    const segmentId = request.params.segmentid;
+    return new Promise((success, error) => {
+    const segmentId = request.params.segmentId;
     const listId = request.params.listId;
-    const endPoint = 'lists/' + listId + '/segments/' + segmentId;
-    _prepareRequest(this.baseUrl, endPoint, request, response);
+    const endPoint = "lists/" + listId + "/segments/" + segmentId;
+    _prepareRequest(this.baseUrl, endPoint, request, response)
+    .then(result => {
+      return success(result);
+    })
+    .catch(err => console.log(err));
+    });
   }
-
-
-
 }
 module.exports = mailChimp;

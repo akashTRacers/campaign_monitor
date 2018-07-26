@@ -1,0 +1,19 @@
+PUT /api/v3.2/segments/cecd3dfc9240e0ea1bf261a165321bdd.json
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {\"Title\":\"My 4568 Segment\",\"RuleGroups\":[{\"Rules\":[{\"RuleType\":\"EmailAddress\",\"Clause\":\"CONTAINS @FB.com\"},{\"RuleType\":\"DateSubscribed\",\"Clause\":\"BEFORE 2018-10-01\"}]}]}
+
+HTTP/1.1 200 OK
+date: Thu, 26 Jul 2018 07:01:46 GMT
+content-length: 0
+connection: close
+cache-control: private, s-maxage=0
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+x-cache: MISS
+x-edge-request-duration: 355ms
+x-edge-request-id: 4508210b-a6e6-e7bf-0ccf-782af684c4b0
+x-frame-options: SAMEORIGIN
+

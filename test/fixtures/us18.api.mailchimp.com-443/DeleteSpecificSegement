@@ -1,0 +1,16 @@
+DELETE /3.0/lists/43f899303b/segments/4213
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6OTRhOTY1MGM1NjZlMzZhYjhjZjQ0NjFmMzU4NGQ1YTYtdXMxOA==
+content-type: application/json
+host: us18.api.mailchimp.com
+accept: application/json
+body: {}
+
+HTTP/1.1 204 No Content
+server: openresty
+content-type: application/json; charset=utf-8
+x-request-id: 5d910a60-9e53-4f24-ba59-7b012d71eec0
+date: Thu, 26 Jul 2018 11:29:56 GMT
+connection: close
+set-cookie: _AVESTA_ENVIRONMENT=prod; path=/
+set-cookie: _mcid=1.8eafc8007d1176ca2535874dc834f4e0; expires=Fri, 26-Jul-2019 11:29:56 GMT; Max-Age=31536000; path=/; domain=.mailchimp.com
+

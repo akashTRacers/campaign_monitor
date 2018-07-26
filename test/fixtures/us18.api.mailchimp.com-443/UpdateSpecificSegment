@@ -1,0 +1,22 @@
+PATCH /3.0/lists/59b3b15db4/segments/4661
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6OTRhOTY1MGM1NjZlMzZhYjhjZjQ0NjFmMzU4NGQ1YTYtdXMxOA==
+content-type: application/json
+host: us18.api.mailchimp.com
+accept: application/json
+body: {\"name\":\"email based\",\"options\":{\"match\":\"any\",\"conditions\":[{\"condition_type\":\"EmailAddress\",\"field\":\"merge0\",\"op\":\"is\",\"value\":\"jainakash7474@gmail.com\"},{\"condition_type\":\"EmailAddress\",\"field\":\"merge0\",\"op\":\"is\",\"value\":\"akjain@grepruby.com\"}]}}
+
+HTTP/1.1 200 OK
+server: openresty
+content-type: application/json; charset=utf-8
+content-length: 1545
+vary: Accept-Encoding
+x-request-id: 32a0b61a-b0b0-4095-a7e4-3536d9c097a4
+link: <https://us18.api.mailchimp.com/schema/3.0/Lists/Segments/Instance.json>; rel="describedBy"
+date: Thu, 26 Jul 2018 11:23:04 GMT
+connection: close
+set-cookie: _AVESTA_ENVIRONMENT=prod; path=/
+set-cookie: _mcid=1.8cfaa72f3f19a83d8403ac8305a3a991; expires=Fri, 26-Jul-2019 11:23:04 GMT; Max-Age=31536000; path=/; domain=.mailchimp.com
+
+{"id":4661,"name":"email based","member_count":0,"type":"saved","created_at":"2018-07-26T11:16:13+00:00","updated_at":"2018-07-26T11:23:04+00:00","options":{"match":"any","conditions":[{"condition_type":"EmailAddress","field":"EMAIL","op":"is","value":"jainakash7474@gmail.com"},{"condition_type":"EmailAddress","field":"EMAIL","op":"is","value":"akjain@grepruby.com"}]},"list_id":"59b3b15db4",
+
+"_links":[{"rel":"self","href":"https://us18.api.mailchimp.com/3.0/lists/59b3b15db4/segments/4661","method":"GET","targetSchema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/Response.json"},{"rel":"parent","href":"https://us18.api.mailchimp.com/3.0/lists/59b3b15db4/segments","method":"GET","targetSchema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/CollectionResponse.json","schema":"https://us18.api.mailchimp.com/schema/3.0/CollectionLinks/Lists/Segments.json"},{"rel":"delete","href":"https://us18.api.mailchimp.com/3.0/lists/59b3b15db4/segments/4661","method":"DELETE"},{"rel":"update","href":"https://us18.api.mailchimp.com/3.0/lists/59b3b15db4/segments/4661","method":"PATCH","targetSchema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/Response.json","schema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/PATCH.json"},{"rel":"members","href":"https://us18.api.mailchimp.com/3.0/lists/59b3b15db4/segments/4661/members","method":"GET","targetSchema":"https://us18.api.mailchimp.com/schema/3.0/Definitions/Lists/Segments/Members/Response.json"}]}

@@ -1,0 +1,19 @@
+DELETE /api/v3.2/segments/58c3f23ee561525b195c61c657b6f794.json
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {}
+
+HTTP/1.1 200 OK
+date: Thu, 26 Jul 2018 07:18:32 GMT
+content-length: 0
+connection: close
+cache-control: private, s-maxage=0
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+x-cache: MISS
+x-edge-request-duration: 289ms
+x-edge-request-id: ab1dc050-cd7b-bba7-9d18-59ec7249cbee
+x-frame-options: SAMEORIGIN
+
