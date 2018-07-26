@@ -1,0 +1,22 @@
+GET /api/v3.2/lists/undefined/segments.json
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {}
+
+HTTP/1.1 401 Unauthorized
+date: Thu, 26 Jul 2018 14:40:32 GMT
+content-type: application/json
+content-length: 39
+connection: close
+cache-control: private
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+www-authenticate: Basic realm="api.createsend.com"
+x-cache: MISS
+x-edge-request-duration: 296ms
+x-edge-request-id: f47060d0-765c-a201-aeb5-02176e134434
+x-frame-options: SAMEORIGIN
+
+{"Code":101,"Message":"Invalid ListID"}

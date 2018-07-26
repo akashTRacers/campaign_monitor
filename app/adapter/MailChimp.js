@@ -42,7 +42,6 @@ class mailChimp {
     return new Promise((success, error) => {
       const segmentId = request.params.segmentId;
       const listId = request.params.listId;
-      console.log(listId + "     " + segmentId);
       const endPoint = "lists/" + listId + "/segments/" + segmentId;
       _prepareRequest(this.baseUrl, endPoint, request, response)
         .then(result => {
@@ -66,27 +65,27 @@ class mailChimp {
 
   deleteSegment(request, response) {
     return new Promise((success, error) => {
-    const segmentId = request.params.segmentId;
-    const listId = request.params.listId;
-    const endPoint = "lists/" + listId + "/segments/" + segmentId;
-    _prepareRequest(this.baseUrl, endPoint, request, response)
-    .then(result => {
-      return success(result);
-    })
-    .catch(err => console.log(err));
+      const segmentId = request.params.segmentId;
+      const listId = request.params.listId;
+      const endPoint = "lists/" + listId + "/segments/" + segmentId;
+      _prepareRequest(this.baseUrl, endPoint, request, response)
+        .then(result => {
+          return success(result);
+        })
+        .catch(err => console.log(err));
     });
   }
 
   updateSegment(request, response) {
     return new Promise((success, error) => {
-    const segmentId = request.params.segmentId;
-    const listId = request.params.listId;
-    const endPoint = "lists/" + listId + "/segments/" + segmentId;
-    _prepareRequest(this.baseUrl, endPoint, request, response)
-    .then(result => {
-      return success(result);
-    })
-    .catch(err => console.log(err));
+      const segmentId = request.params.segmentId;
+      const listId = request.params.listId;
+      const endPoint = "lists/" + listId + "/segments/" + segmentId;
+      _prepareRequest(this.baseUrl, endPoint, request, response)
+        .then(result => {
+          return success(result);
+        })
+        .catch(err => console.log(err));
     });
   }
 }

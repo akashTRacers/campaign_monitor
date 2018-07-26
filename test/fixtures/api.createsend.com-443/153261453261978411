@@ -1,0 +1,22 @@
+GET /api/v3.2/clients/undefined/lists.json
+authorization: Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y=
+content-type: application/json
+host: api.createsend.com
+accept: application/json
+body: {}
+
+HTTP/1.1 401 Unauthorized
+date: Thu, 26 Jul 2018 14:15:32 GMT
+content-type: application/json
+content-length: 41
+connection: close
+cache-control: private
+p3p: CP="OTI DSP COR CUR IVD CONi OTPi OUR IND UNI STA PRE"
+server: cm-api-server
+www-authenticate: Basic realm="api.createsend.com"
+x-cache: MISS
+x-edge-request-duration: 215ms
+x-edge-request-id: e8c62263-9c73-c501-b76b-d5ac074bdc06
+x-frame-options: SAMEORIGIN
+
+{"Code":102,"Message":"Invalid ClientID"}

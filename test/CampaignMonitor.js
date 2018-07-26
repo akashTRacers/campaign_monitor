@@ -21,6 +21,29 @@ describe("#getLists()", () => {
       .getLists(request, response)
       .then(body => {
         chai.expect(body).to.be.a("Array");
+        chai.expect(body[0]).to.have.all.keys("ListID", "Name");
+        //chai.expect(body).to.have.length(15);
+        done();
+      })
+      .catch(errorOnOperation => done(errorOnOperation));
+  });
+
+  it("should return a error when clientID is missing", done => {
+    let request = httpMocks.createRequest({
+      query: { },
+      headers: {
+        provider: "campaignMonitor",
+        authorization:
+          "Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y="
+      }
+    });
+    const response = httpMocks.createResponse();
+    camp
+      .getLists(request, response)
+      .then(body => {
+        chai.expect(body.Code).to.equal(102);
+        chai.expect(body.Message).to.equal('Invalid ClientID');
+        
         done();
       })
       .catch(errorOnOperation => done(errorOnOperation));
@@ -38,9 +61,33 @@ describe("#getAllSegment()", () => {
       }
     });
     const response = httpMocks.createResponse();
-    camp.getAllSegment(request, response)
+    camp
+      .getAllSegment(request, response)
       .then(body => {
         chai.expect(body).to.be.a("Array");
+        chai.expect(body[0]).to.have.all.keys("ListID", "SegmentID", "Title");
+        
+        done();
+      })
+      .catch(errorOnOperation => done(errorOnOperation));
+  });
+
+  it("should return error when segment Id is missing", done => {
+    let request = httpMocks.createRequest({
+      params: { },
+      headers: {
+        provider: "campaignMonitor",
+        authorization:
+          "Basic ZGNhZWI0MTVlOGM3ZGYyZWU1NmUyMzc5NDJkYzdmZmE6ZThhMjYwMTcxY2M2NTBmZDNjN2RlNDZiYTZmN2YwY2Y="
+      }
+    });
+    const response = httpMocks.createResponse();
+    camp
+      .getAllSegment(request, response)
+      .then(body => {
+        chai.expect(body.Code).to.equal(101);
+        chai.expect(body.Message).to.equal('Invalid ListID');
+        
         done();
       })
       .catch(errorOnOperation => done(errorOnOperation));
@@ -62,6 +109,15 @@ describe("#getSpecificSegment()", () => {
       .getSpecificSegment(request, response)
       .then(body => {
         chai.expect(body).to.be.a("Object");
+        chai
+          .expect(body)
+          .to.have.all.keys(
+            "ActiveSubscribers",
+            "RuleGroups",
+            "ListID",
+            "SegmentID",
+            "Title"
+          );
         done();
       })
       .catch(errorOnOperation => done(errorOnOperation));
@@ -113,6 +169,14 @@ describe("#getEmailState()", () => {
       .getEmailState(request, response)
       .then(body => {
         chai.expect(body).to.be.a("Array");
+        chai
+          .expect(body[0])
+          .to.have.all.keys(
+            "ListID",
+            "ListName",
+            "SubscriberState",
+            "DateSubscriberAdded"
+          );
         done();
       })
       .catch(errorOnOperation => done(errorOnOperation));
